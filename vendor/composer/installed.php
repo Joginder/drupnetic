@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'drupal/recommended-project',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '40bef3f42f01cf3a2276b84d9b2761b377e10bda',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -334,10 +334,28 @@
                 0 => '11.1.6',
             ),
         ),
-        'drupal/recommended-project' => array(
-            'pretty_version' => '1.0.0+no-version-set',
+        'drupal/gin' => array(
+            'pretty_version' => '3.0.0',
+            'version' => '3.0.0.0',
+            'reference' => '8.x-3.0',
+            'type' => 'drupal-theme',
+            'install_path' => __DIR__ . '/../../web/themes/contrib/gin',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/gin_toolbar' => array(
+            'pretty_version' => '1.0.0',
             'version' => '1.0.0.0',
-            'reference' => null,
+            'reference' => '8.x-1.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../web/modules/contrib/gin_toolbar',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/recommended-project' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '40bef3f42f01cf3a2276b84d9b2761b377e10bda',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -550,8 +568,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.1|2.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.1|2.0',
             ),
         ),
         'psr/event-dispatcher' => array(
