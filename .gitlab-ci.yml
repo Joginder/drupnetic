@@ -14,12 +14,11 @@ deploy_to_cpanel:
   before_script:
     - apk add --no-cache lftp
   script:
-    - sudo apt-get update -qq && sudo apt-get install -y -qq lftp
     - lftp -c "
         set ftp:list-options -a;
         open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST;
         mirror -R --delete --verbose ./ $FTP_TARGET_DIR;
-      "
+      " || { echo 'FTP deployment failed'; exit 1; }
   only:
     - main
 
