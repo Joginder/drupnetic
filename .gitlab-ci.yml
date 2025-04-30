@@ -16,6 +16,7 @@ deploy_to_cpanel:
   script:
     - lftp -c "
         set ftp:list-options -a;
+        set ftp:passive-mode true;
         open -u $FTP_USERNAME,$FTP_PASSWORD $FTP_HOST;
         mirror -R --delete --verbose ./ $FTP_TARGET_DIR;
       " || { echo 'FTP deployment failed'; exit 1; }
