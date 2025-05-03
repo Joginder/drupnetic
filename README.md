@@ -1,46 +1,75 @@
+<img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
 
-Project: Drupnetic.com
-Technology: Drupal
-Version: 11
-Owner/Maintainer: Joginder Singh
+Drupal is an open source content management platform supporting a variety of
+websites ranging from personal weblogs to large community-driven websites. For
+more information, visit the Drupal website, [Drupal.org][Drupal.org], and join
+the [Drupal community][Drupal community].
 
-<!-- This project contains information about me and my portfolio -->
+## Contributing
 
-# drupal/core-recommended
+Drupal is developed on [Drupal.org][Drupal.org], the home of the international
+Drupal community since 2001!
 
-This project is for use with a Composer-managed Drupal site. It is recommended
-that all Composer-managed Drupal sites use this project.
+[Drupal.org][Drupal.org] hosts Drupal's [GitLab repository][GitLab repository],
+its [issue queue][issue queue], and its [documentation][documentation]. Before
+you start working on code, be sure to search the [issue queue][issue queue] and
+create an issue if your aren't able to find an existing issue.
 
-Require this project *instead of* the [drupal/core](https://github.com/drupal/core)
-subtree split in order to guarantee that all of the dependencies from
-`drupal/core` will be included in your Drupal site at exactly the same version
-that was tested with the version of Drupal you are currently using.
+Every issue on Drupal.org automatically creates a new community-accessible fork
+that you can contribute to. Learn more about the code contribution process on
+the [Issue forks & merge requests page][issue forks].
 
-The consequences of *not* using this project is that Drupal's dependencies
-may "float up" to more recent versions than were tested with Drupal when you
-use Composer to upgrade your Drupal site. Occasionally, new dependency versions
-introduce bugs in Drupal. While these sorts of errors are usually corrected
-fairly quickly, it can still be quite disruptive to be one of the first people
-encountering one of these bugs. Using the recommended dependencies avoids this
-problem by only using dependency versions that have already been tested with
-Drupal.
+## Usage
 
-## Upgrading
+For a brief introduction, see [USAGE.txt](/core/USAGE.txt). You can also find
+guides, API references, and more by visiting Drupal's [documentation
+page][documentation].
 
-When using this project, upgrade your Drupal site as follows:
-```
-$ composer update drupal/core-recommended --with-dependencies
-```
-This will update `drupal/core` and any needed dependencies.
+You can quickly extend Drupal's core feature set by installing any of its
+[thousands of free and open source modules][modules]. With Drupal and its
+module ecosystem, you can often build most or all of what your project needs
+before writing a single line of code.
 
-Running a simple `composer update` will also update `drupal/core`, all of
-Drupal's dependencies (to the correct tested versions), and all of your
-contrib modules and other dependencies.
+## Changelog
 
-## References
+Drupal keeps detailed [change records][changelog]. You can search Drupal's
+changes for a record of every notable breaking change and new feature since
+2011.
 
-This project is derived from the original community project
-[webflo/drupal-core-strict](https://github.com/webflo/drupal-core-strict).
-It was generated from tools derived from [webflo/package-generator-drupal](https://github.com/webflo/package-generator-drupal)
-and [webflo/package-generator](https://github.com/webflo/package-generator).
+## Security
 
+For a list of security announcements, see the [Security advisories
+page][Security advisories] (available as [an RSS feed][security RSS]). This
+page also describes how to subscribe to these announcements via email.
+
+For information about the Drupal security process, or to find out how to report
+a potential security issue to the Drupal security team, see the [Security team
+page][security team].
+
+## Need a helping hand?
+
+Visit the [Support page][support] or browse [over a thousand Drupal
+providers][service providers] offering design, strategy, development, and
+hosting services.
+
+## Legal matters
+
+Know your rights when using Drupal by reading Drupal core's
+[license](/core/LICENSE.txt).
+
+Learn about the [Drupal trademark and logo policy here][trademark].
+
+[Drupal.org]: https://www.drupal.org
+[Drupal community]: https://www.drupal.org/community
+[GitLab repository]: https://git.drupalcode.org/project/drupal
+[issue queue]: https://www.drupal.org/project/issues/drupal
+[issue forks]: https://www.drupal.org/drupalorg/docs/gitlab-integration/issue-forks-merge-requests
+[documentation]: https://www.drupal.org/documentation
+[changelog]: https://www.drupal.org/list-changes/drupal
+[modules]: https://www.drupal.org/project/project_module
+[security advisories]: https://www.drupal.org/security
+[security RSS]: https://www.drupal.org/security/rss.xml
+[security team]: https://www.drupal.org/drupal-security-team
+[service providers]: https://www.drupal.org/drupal-services
+[support]: https://www.drupal.org/support
+[trademark]: https://www.drupal.com/trademark
