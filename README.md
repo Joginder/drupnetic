@@ -1,5 +1,8 @@
 <img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
 
+
+Project name : Drupnetic.com
+
 Drupal is an open source content management platform supporting a variety of
 websites ranging from personal weblogs to large community-driven websites. For
 more information, visit the Drupal website, [Drupal.org][Drupal.org], and join
@@ -73,3 +76,6 @@ Learn about the [Drupal trademark and logo policy here][trademark].
 [service providers]: https://www.drupal.org/drupal-services
 [support]: https://www.drupal.org/support
 [trademark]: https://www.drupal.com/trademark
+
+
+Author: Joginder Singh
