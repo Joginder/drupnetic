@@ -1,0 +1,14 @@
+global-styling:
+  css:
+    base:
+      dist/tailwind.css: {}
+      dist/custom.css: {}
+  js:
+    dist/scripts.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal
+    - core/drupal.dialog
+    - core/drupal.dialog.ajax
+    - core/drupal.ajax
