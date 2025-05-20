@@ -1,0 +1,13 @@
+uuid: 61d28de0-23a3-4a24-b8e6-ecaf30e2b400
+langcode: en
+status: true
+dependencies:
+  enforced:
+    theme:
+      - drupnetic
+_core:
+  default_config_hash: ViDakuBSY2ZC0wJBTxP7JjqvbpXBuctwV5XURF4Ek7I
+id: drupnetic_medium
+label: 'drupnetic Medium'
+locked: false
+pattern: 'j F Y'

@@ -1,0 +1,20 @@
+uuid: ea557812-a4de-4d73-b337-e2e92d6cc7ce
+langcode: en
+status: false
+dependencies:
+  theme:
+    - drupnetic
+_core:
+  default_config_hash: A8aUQ6DZ7qWnSQ8WTZZlUJuKCjPOXjKhUIIstBhJ4-o
+id: drupnetic_page_title
+theme: drupnetic
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

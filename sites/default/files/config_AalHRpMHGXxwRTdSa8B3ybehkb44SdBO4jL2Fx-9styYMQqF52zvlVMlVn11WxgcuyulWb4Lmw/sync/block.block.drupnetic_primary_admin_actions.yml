@@ -1,0 +1,20 @@
+uuid: 9323fc5f-cd35-4085-a7a6-fd2ed8f7bde1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupnetic
+_core:
+  default_config_hash: sJMcO_In9nCyXup-wihY0rAirO-YyN1Gb2brMpEubKk
+id: drupnetic_primary_admin_actions
+theme: drupnetic
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

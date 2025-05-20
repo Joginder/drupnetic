@@ -1,0 +1,22 @@
+uuid: 1cf56212-9b38-4820-841a-8db2df50d160
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - drupnetic
+_core:
+  default_config_hash: HivbSTI9u7N0kyPuaaKB2Ezz9t9OndZMNHEzF9wZM2g
+id: drupnetic_help
+theme: drupnetic
+region: sidebar_first
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

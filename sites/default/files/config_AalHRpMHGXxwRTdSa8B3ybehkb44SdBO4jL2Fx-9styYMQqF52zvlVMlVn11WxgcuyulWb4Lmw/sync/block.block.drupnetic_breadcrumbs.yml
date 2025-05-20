@@ -1,0 +1,22 @@
+uuid: be066a43-53de-4988-a28f-f5c351e3cb64
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupnetic
+_core:
+  default_config_hash: R_6UY9tsX8g98xRwjnmAdd2TTmPg0d4eJgARRRww7dA
+id: drupnetic_breadcrumbs
+theme: drupnetic
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

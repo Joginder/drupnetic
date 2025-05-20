@@ -1,0 +1,22 @@
+uuid: 6bcca9bc-6d80-41ca-98ef-bb0a6e72a52d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupnetic
+_core:
+  default_config_hash: NkReIfM08BFzbjos5T4eNFZHBOzVG0nt8DocLtuI3Rg
+id: drupnetic_content
+theme: drupnetic
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

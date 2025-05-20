@@ -1,0 +1,22 @@
+uuid: 2b7ef27f-3fd2-4986-8409-d7ab41348e0a
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupnetic
+_core:
+  default_config_hash: hQv87S1h8mg4NLAATciii7uCERmk_FvGIT2QDbRlXAE
+id: drupnetic_powered
+theme: drupnetic
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

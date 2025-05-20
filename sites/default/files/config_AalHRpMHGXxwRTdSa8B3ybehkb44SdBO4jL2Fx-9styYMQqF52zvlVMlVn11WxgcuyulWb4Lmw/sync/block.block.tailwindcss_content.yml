@@ -1,0 +1,22 @@
+uuid: 02e5696e-b587-4989-a868-c8381b81991b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - tailwindcss
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: tailwindcss_content
+theme: tailwindcss
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: e89cb6d1-104d-4a20-a9ae-c4964ba7bfc1
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupnetic
+_core:
+  default_config_hash: Yz0nqqdf093Mas5pMzY_1Pydwptw2FhEjdZzTg4kGAY
+id: drupnetic_messages
+theme: drupnetic
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

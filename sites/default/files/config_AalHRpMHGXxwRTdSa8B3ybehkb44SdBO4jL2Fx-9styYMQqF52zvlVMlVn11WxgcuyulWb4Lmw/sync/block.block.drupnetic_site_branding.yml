@@ -1,0 +1,25 @@
+uuid: 4f476023-8c79-444a-96de-b617afe2d38a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupnetic
+_core:
+  default_config_hash: 2O2Gle1uLIGXxA7dYsRP1s3nYSOfuZfbRqH8BJtZ0qc
+id: drupnetic_site_branding
+theme: drupnetic
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: true
+visibility: {  }

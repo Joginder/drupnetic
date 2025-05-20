@@ -1,0 +1,22 @@
+uuid: 5d6b679b-c81e-4627-9813-b9b441814d4c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupnetic
+_core:
+  default_config_hash: _8O6gr5YaCHoyx9uiRa2OFCMOSJcZVCag7xaMmkmOdc
+id: drupnetic_primary_local_tasks
+theme: drupnetic
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: en
+uuid: e29c928f-9c3d-4fbc-985b-1d7d7df0a747
+name: Drupnetic
+mail: joginderpc@gmail.com
+slogan: 'Kinetic Drupal Solutions for Complex Challenges'
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

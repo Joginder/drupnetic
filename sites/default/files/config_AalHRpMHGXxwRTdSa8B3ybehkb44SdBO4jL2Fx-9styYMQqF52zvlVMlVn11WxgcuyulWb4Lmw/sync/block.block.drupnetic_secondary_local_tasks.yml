@@ -1,0 +1,22 @@
+uuid: e8227d2e-3107-4675-99cd-be320ba56825
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupnetic
+_core:
+  default_config_hash: Ecvi6FQpy_AB5w4JDW0IXJlngvLecPFK5eMsUA9h9G4
+id: drupnetic_secondary_local_tasks
+theme: drupnetic
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }
