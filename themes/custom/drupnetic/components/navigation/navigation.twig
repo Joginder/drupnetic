@@ -1,0 +1,22 @@
+<nav class="navigation" aria-label="Main Navigation">
+    <ul class="navigation__list">
+        {% for item in items %}
+            <li class="navigation__item{% if item.is_active %} navigation__item--active{% endif %}">
+                <a href="{{ item.url }}" class="navigation__link">
+                    {{ item.title }}
+                </a>
+                {% if item.children %}
+                    <ul class="navigation__sublist">
+                        {% for child in item.children %}
+                            <li class="navigation__subitem{% if child.is_active %} navigation__subitem--active{% endif %}">
+                                <a href="{{ child.url }}" class="navigation__sublink">
+                                    {{ child.title }}
+                                </a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

@@ -12,8 +12,8 @@ _core:
   default_config_hash: FjcXQk-VBtrj0yc6k3LkzDT5iBk3kLFqkJWdftTcZ3w
 id: drupnetic_main_menu
 theme: drupnetic
-region: primary_menu
-weight: 0
+region: header
+weight: -6
 provider: null
 plugin: 'system_menu_block:main'
 settings:

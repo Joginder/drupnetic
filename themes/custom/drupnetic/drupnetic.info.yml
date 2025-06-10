@@ -1,13 +1,24 @@
-name: Drupnetic Theme
-description: A starter kit theme for Drupal 8/9 and Tailwind CSS.
-core_version_requirement: ^8 || ^9 || ^10 ||^11
+name: Drupnetic
 type: theme
-base theme: stable9
+'base theme': stable9
 libraries:
-  - drupnetic/global-styling
-starterkit: true
-
-# Information added by Drupal.org packaging script on 2025-02-01
-version: '5.0.0-alpha4'
-project: 'tailwindcss'
-datestamp: 1738375103
+  - drupnetic/base
+  - drupnetic/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - drupnetic/user
+  core/drupal.dropbutton:
+    - drupnetic/dropbutton
+  core/drupal.dialog:
+    - drupnetic/dialog
+  file/drupal.file:
+    - drupnetic/file
+  core/drupal.progress:
+    - drupnetic/progress
+version: 1.0.0
+project: drupal
+datestamp: 1743628365
+description: ''
+core_version_requirement: ^11
+generator: 'starterkit_theme:11.1.6'

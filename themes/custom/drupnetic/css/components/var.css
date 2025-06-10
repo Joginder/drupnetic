@@ -1,0 +1,15 @@
+/* All variables are here */
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #222222;
+    --card-bg: #f7f7f7;
+    --accent: #000000;
+}
+
+body.dark-mode {
+    --bg-color: #111111;
+    --text-color: #eeeeee;
+    --card-bg: #1e1e1e;
+    --accent: #ffffff;
+}

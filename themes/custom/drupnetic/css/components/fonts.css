@@ -1,0 +1,13 @@
+ /* Import font family from google fonts. */
+ @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+:root {
+    --font-family-sora: 'Sora', sans-serif;
+    --font-optical-size: auto;
+    --font-weight-normal: 400;
+    --font-style: normal;
+}
+/* Font family for body */
+body {
+    font-family: var(--font-family-sora);
+}
