@@ -14,3 +14,4 @@
 #12 /home/drupnwhq/public_html/core/lib/Drupal/Core/DrupalKernel.php(707): Drupal\Core\DrupalKernel->boot()
 #13 /home/drupnwhq/public_html/index.php(19): Drupal\Core\DrupalKernel->handle()
 #14 {main}
+[14-Jun-2025 17:55:24 UTC] Uncaught PHP Exception TypeError: "Drupal\shortcut\ShortcutSetStorage::getDisplayedToUser(): Return value must be of type Drupal\shortcut\ShortcutSetInterface, null returned" at /home/drupnwhq/public_html/core/modules/shortcut/src/ShortcutSetStorage.php line 134
