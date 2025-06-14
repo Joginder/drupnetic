@@ -1,1 +1,16 @@
 [03-May-2025 14:18:17 UTC] PHP Warning:  Constant PASSWORD_DEFAULT already defined in /home/drupnwhq/public_html/update_pass.php on line 17
+[01-Jun-2025 14:43:24 UTC] PDOException: SQLSTATE[HY000] [1040] Too many connections in /home/drupnwhq/public_html/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php on line 77 #0 /home/drupnwhq/public_html/core/modules/mysql/src/Driver/Database/mysql/Connection.php(140): PDO->__construct()
+#1 /home/drupnwhq/public_html/core/lib/Drupal/Core/Database/Database.php(417): Drupal\mysql\Driver\Database\mysql\Connection::open()
+#2 /home/drupnwhq/public_html/core/lib/Drupal/Core/Database/Database.php(148): Drupal\Core\Database\Database::openConnection()
+#3 [internal function]: Drupal\Core\Database\Database::getConnection()
+#4 /home/drupnwhq/public_html/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(77): call_user_func_array()
+#5 /home/drupnwhq/public_html/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#6 /home/drupnwhq/public_html/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(226): Drupal\Component\DependencyInjection\Container->get()
+#7 /home/drupnwhq/public_html/core/lib/Drupal/Component/DependencyInjection/PhpArrayContainer.php(60): Drupal\Component\DependencyInjection\PhpArrayContainer->resolveServicesAndParameters()
+#8 /home/drupnwhq/public_html/core/lib/Drupal/Component/DependencyInjection/Container.php(177): Drupal\Component\DependencyInjection\PhpArrayContainer->createService()
+#9 /home/drupnwhq/public_html/core/lib/Drupal/Core/DrupalKernel.php(547): Drupal\Component\DependencyInjection\Container->get()
+#10 /home/drupnwhq/public_html/core/lib/Drupal/Core/DrupalKernel.php(894): Drupal\Core\DrupalKernel->getCachedContainerDefinition()
+#11 /home/drupnwhq/public_html/core/lib/Drupal/Core/DrupalKernel.php(505): Drupal\Core\DrupalKernel->initializeContainer()
+#12 /home/drupnwhq/public_html/core/lib/Drupal/Core/DrupalKernel.php(707): Drupal\Core\DrupalKernel->boot()
+#13 /home/drupnwhq/public_html/index.php(19): Drupal\Core\DrupalKernel->handle()
+#14 {main}
