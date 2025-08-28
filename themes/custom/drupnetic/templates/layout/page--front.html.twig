@@ -59,7 +59,20 @@
   {{ page.help }}
 
   <main role="main">
-    {{ include('drupnetic:hero-section', with_context = false) }}
+    {{ include('drupnetic:hero-section', {
+      name: 'Joginder Singh',
+      role: 'Drupal Frontend Developer',
+      location: 'India',
+      description: "I'm Joginder Singh a Drupal Frontend Developer from Mohali, Punjab, India...",
+      social: [
+        { url: 'https://facebook.com', label: 'Facebook', icon: 'fab fa-facebook-f' },
+        { url: 'https://twitter.com', label: 'Twitter', icon: 'fab fa-twitter' },
+        { url: 'https://github.com', label: 'GitHub', icon: 'fab fa-github' }
+      ],
+      resume_url: '/files/resume.pdf',
+      image: '/themes/custom/drupnetic/images/banner.svg'
+    }) }}
+
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
     <div class="layout-content">

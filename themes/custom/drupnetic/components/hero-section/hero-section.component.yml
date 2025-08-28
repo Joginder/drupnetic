@@ -1,20 +1,3 @@
-# This is so your IDE knows about the syntax for fixes and autocomplete.
-$schema: https://git.drupalcode.org/project/drupal/-/raw/HEAD/core/assets/schemas/v1/metadata.schema.json
-# The human readable name.
-sdc:
-  name: header
-  label: Header
-  description: Main site header component
-  status: enabled
-  fields:
-    logo:
-      type: image
-      label: Logo
-    navigation:
-      type: component
-      label: Navigation
-      component: navigation
-    search:
-      type: component
-      label: Search
-      component: search
+name: Hero
+status: stable
+description: "Hero section with intro text and image"

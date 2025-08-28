@@ -1,0 +1,16 @@
+{
+  "name": "drupnetic",
+  "version": "1.0.0",
+  "description": "drupnetic theme, generated from starterkit_theme. Additional information on generating themes can be found in the [Starterkit documentation](https://www.drupal.org/docs/core-modules-and-themes/core-themes/starterkit-theme).",
+ "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass scss:css --no-source-map --style=compressed",
+    "watch": "sass --watch scss:css --style=expanded"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}
