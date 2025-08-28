@@ -2,20 +2,8 @@ name: Drupnetic
 type: theme
 'base theme': stable9
 libraries:
-  - drupnetic/base
-  - drupnetic/messages
-  - core/normalize
-libraries-extend:
-  user/drupal.user:
-    - drupnetic/user
-  core/drupal.dropbutton:
-    - drupnetic/dropbutton
-  core/drupal.dialog:
-    - drupnetic/dialog
-  file/drupal.file:
-    - drupnetic/file
-  core/drupal.progress:
-    - drupnetic/progress
+  - drupnetic/drupnetic
+
 version: 1.0.0
 project: drupal
 datestamp: 1743628365

@@ -1,15 +1,26 @@
 {# SDC (Single Directory Component) Hero Component #}
-<div class="hero grid">
-	<div class="hero-text">
-		<h1>Hello I’m
-			<span>Joginder Singh</span>
-		</h1>
-		<h2>Drupal Front end developer from
-			<span>India.</span>
-		</h2>
-		<p>Experienced developer specializing in modern frontend technologies and frameworks.</p>
-	</div>
-	<div class="hero-image">
-		<img src="/themes/custom/drupnetic/images/banner.svg" alt="Illustration">
-	</div>
-</div>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__content">
+    <h1 id="hero-title" class="hero__title">
+      Hello I’m <span class="highlight">{{ name }}</span>. <br>
+      <span class="highlight">{{ role }}</span> Based in <span class="highlight">{{ location }}</span>.
+    </h1>
+
+    <p class="hero__desc">{{ description }}</p>
+
+    <div class="hero__social">
+      {% for item in social %}
+        <a href="{{ item.url }}" class="hero__icon" aria-label="{{ item.label }}">
+          <i class="{{ item.icon }}" aria-hidden="true"></i>
+        </a>
+      {% endfor %}
+    </div>
+
+    <a href="{{ resume_url }}" class="hero__btn">{{ 'Resume'|t }}</a>
+  </div>
+
+  <figure class="hero__image">
+    <img src="{{ image }}" alt="{{ name }} illustration" />
+  </figure>
+</section>
+
