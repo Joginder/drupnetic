@@ -1,0 +1,53 @@
+
+@use 'var' as *;
+
+.hero-banner {
+  padding: $space-xxl 0;
+  background-color: $color-white;
+
+  &__content {
+    @include container;
+    display: grid;
+    gap: $space-xl;
+
+    @include respond(md) {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }
+
+  &__text {
+    h1 {
+      font-size: $font-size-xxl;
+      line-height: 1.2;
+      margin-bottom: $space-md;
+      max-width: 18ch;
+
+      @include respond(lg) {
+        font-size: 3.5rem; // scaling beyond XXL
+      }
+    }
+
+    p {
+      font-size: $font-size-md;
+      color: $color-gray-700;
+      margin-bottom: $space-lg;
+      max-width: 45ch;
+    }
+
+    .hero-btn {
+      @include button-style($color-dark, $color-white);
+      border-radius: 0.5rem;
+      font-weight: 600;
+    }
+  }
+
+  &__image {
+    text-align: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

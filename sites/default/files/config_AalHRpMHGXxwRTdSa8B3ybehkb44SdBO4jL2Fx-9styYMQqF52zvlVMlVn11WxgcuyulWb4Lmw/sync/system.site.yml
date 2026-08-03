@@ -1,14 +1,14 @@
 _core:
   default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
 langcode: en
-uuid: e29c928f-9c3d-4fbc-985b-1d7d7df0a747
-name: Drupnetic
+uuid: 70543225-d412-49da-aaef-a4ad524c86ca
+name: Drup
 mail: joginderpc@gmail.com
-slogan: 'Kinetic Drupal Solutions for Complex Challenges'
+slogan: ''
 page:
   403: ''
   404: ''
-  front: /node/1
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

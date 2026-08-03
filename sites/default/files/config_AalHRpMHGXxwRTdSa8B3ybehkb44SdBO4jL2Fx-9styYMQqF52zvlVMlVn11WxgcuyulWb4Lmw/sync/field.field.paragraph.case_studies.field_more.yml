@@ -1,0 +1,23 @@
+uuid: 5d9c84f4-edff-4665-9547-a8b914613a9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_more
+    - paragraphs.paragraphs_type.case_studies
+  module:
+    - link
+id: paragraph.case_studies.field_more
+field_name: field_more
+entity_type: paragraph
+bundle: case_studies
+label: More
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 17
+field_type: link

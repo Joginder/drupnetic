@@ -1,0 +1,114 @@
+
+
+@use 'var' as *;
+
+// Styles
+.working-process {
+  font-family: $font-primary;
+  color: $color-dark;
+  padding: 2rem 1rem;
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+
+    .working-process__title {
+      font-size: 1.8rem;
+      font-weight: 700;
+      background: $color-primary;
+      padding: 0.3rem 0.8rem;
+      border-radius: 6px;
+    }
+
+    .working-process__subtitle {
+      font-size: 1rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    .accordion-item {
+      background: $color-gray-100;
+      border-radius: 45px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 0 rgba(0, 0, 0, 0.8);
+      transition: all 0.3s ease;
+
+      &.active {
+        background: $color-primary;
+      }
+
+      .accordion-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        .accordion-number {
+          font-size: 1.8rem;
+          font-weight: 700;
+        }
+
+        .accordion-title {
+          flex: 1;
+          margin-left: 0.8rem;
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+
+        .accordion-toggle {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid $color-dark;
+          background: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.2rem;
+          font-weight: 700;
+          transition: all 0.3s;
+        }
+      }
+
+      .accordion-content {
+        margin-top: 1rem;
+        font-size: 0.95rem;
+        color: #222;
+      }
+
+      &:hover {
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  @include respond(tablet) {
+    .working-process__header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .accordion-item {
+      padding: 1.2rem;
+    }
+  }
+
+  @include respond(mobile) {
+    .working-process__title {
+      font-size: 1.5rem;
+    }
+
+    .accordion-number {
+      font-size: 1.4rem;
+    }
+  }
+}

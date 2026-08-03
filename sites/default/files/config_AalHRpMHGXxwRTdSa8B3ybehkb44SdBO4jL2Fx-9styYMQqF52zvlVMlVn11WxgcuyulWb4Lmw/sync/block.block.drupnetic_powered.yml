@@ -1,13 +1,13 @@
-uuid: 2b7ef27f-3fd2-4986-8409-d7ab41348e0a
+uuid: d9f0cfed-02ec-46d4-887c-1127a5a26538
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - system
   theme:
     - drupnetic
 _core:
-  default_config_hash: hQv87S1h8mg4NLAATciii7uCERmk_FvGIT2QDbRlXAE
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
 id: drupnetic_powered
 theme: drupnetic
 region: sidebar_first

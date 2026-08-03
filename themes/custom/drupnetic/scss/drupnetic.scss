@@ -1,4 +1,20 @@
 // Styling file for all.
 
 @use 'var' as *;
-@use 'hero' as *;
+@use 'header' as *;
+@use 'banner' as *;
+@use 'services' as *;
+@use 'case-studies' as *;
+@use 'working-process' as *;
+@use 'team-members' as *;
+@use 'testimonials' as *;
+@use 'contact' as *;
+@use 'footer' as *;
+
+
+// Base styles
+.container-width {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}

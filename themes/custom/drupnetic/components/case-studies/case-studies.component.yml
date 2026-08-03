@@ -1,0 +1,8 @@
+name: Case Studies
+status: stable
+description: "Displays a CTA and Case Studies section with three examples."
+category: "Sections"
+libraryOverrides:
+  css:
+    component:
+      css/components/case-studies.css: {}

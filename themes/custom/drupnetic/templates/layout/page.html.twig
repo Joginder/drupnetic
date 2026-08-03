@@ -46,7 +46,6 @@
 
   <header role="banner">
     {{ page.header }}
-    {# {{ include('drupnetic:navigation', with_context = false) }} #}
   </header>
 
   {{ page.primary_menu }}
@@ -63,7 +62,7 @@
 
     <div class="layout-content">
       {{ page.content }}
-    </div>{# /.layout-content #}
+    </div>
 
     {% if page.sidebar_first %}
       <aside class="layout-sidebar-first" role="complementary">

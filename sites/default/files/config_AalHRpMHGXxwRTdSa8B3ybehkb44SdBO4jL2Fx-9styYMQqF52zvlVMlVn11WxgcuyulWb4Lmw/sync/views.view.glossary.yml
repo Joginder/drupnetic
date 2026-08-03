@@ -1,4 +1,4 @@
-uuid: 61f5c244-9dcb-4d8b-96e1-fbc5d9187735
+uuid: 882f9eba-0af9-4f65-afe1-fd9e64baeadf
 langcode: en
 status: false
 dependencies:
@@ -346,6 +346,7 @@ display:
           summary: ''
           order: asc
           empty_table: false
+          class: ''
       row:
         type: fields
         options:

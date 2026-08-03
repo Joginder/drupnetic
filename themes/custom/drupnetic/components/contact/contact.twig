@@ -1,0 +1,45 @@
+<section class="contact container-width">
+  <div class="container">
+    <div class="contact-header">
+      <h2 class="section-title"><span>{{ title }}</span></h2>
+      <p class="section-subtitle">{{ subtitle }}</p>
+    </div>
+
+    <div class="contact-form-wrapper">
+      <form class="contact-form" action="#" method="post">
+        <div class="form-type-toggle">
+          <label>
+            <input type="radio" name="type" value="hi" checked>
+            <span>Say Hi</span>
+          </label>
+          <label>
+            <input type="radio" name="type" value="quote">
+            <span>Get a Quote</span>
+          </label>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email*</label>
+          <input type="email" id="email" name="email" placeholder="Email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message*</label>
+          <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">{{ button_text }}</button>
+      </form>
+
+      <div class="contact-decor">
+        <div class="star star-lg"></div>
+        <div class="star star-sm"></div>
+      </div>
+    </div>
+  </div>
+</section>

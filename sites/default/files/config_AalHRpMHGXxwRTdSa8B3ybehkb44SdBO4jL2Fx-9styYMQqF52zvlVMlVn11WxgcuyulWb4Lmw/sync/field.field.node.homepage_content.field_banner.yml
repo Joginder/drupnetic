@@ -1,0 +1,25 @@
+uuid: 2e9ce3e0-b8cb-400b-8cba-ea984943cd5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner
+    - node.type.homepage_content
+  module:
+    - entity_reference_revisions
+id: node.homepage_content.field_banner
+field_name: field_banner
+entity_type: node
+bundle: homepage_content
+label: Banner
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: {  }
+    negate: 0
+field_type: entity_reference_revisions

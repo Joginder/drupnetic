@@ -1,0 +1,46 @@
+<section class="team container-width">
+  <div class="team__header">
+    <h2 class="team__title">Team</h2>
+    <p class="team__subtitle">
+      Meet the skilled and experienced team behind our successful digital marketing strategies
+    </p>
+  </div>
+
+  <div class="team__grid">
+    {% for member in [
+      {
+        name: 'John Smith',
+        role: 'CEO and Founder',
+        experience: '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy.',
+        img: '/themes/custom/drupnetic/assets/images/team1.jpg'
+      },
+      {
+        name: 'Jane Doe',
+        role: 'Director of Operations',
+        experience: '7+ years of experience in project management and team leadership. Strong organizational and communication skills.',
+        img: '/themes/custom/drupnetic/assets/images/team2.jpg'
+      },
+      {
+        name: 'Michael Brown',
+        role: 'Senior SEO Specialist',
+        experience: '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization.',
+        img: '/themes/custom/drupnetic/assets/images/team3.jpg'
+      }
+    ] %}
+      <div class="team-card">
+        <div class="team-card__image">
+          <img src="{{ member.img }}" alt="{{ member.name }}">
+        </div>
+        <div class="team-card__info">
+          <h3 class="team-card__name">{{ member.name }}</h3>
+          <p class="team-card__role">{{ member.role }}</p>
+          <hr>
+          <p class="team-card__desc">{{ member.experience }}</p>
+        </div>
+        <div class="team-card__linkedin">
+          <span>in</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

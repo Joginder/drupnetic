@@ -1,0 +1,14 @@
+name: Working Process
+description: Accordion-style process section with steps.
+status: stable
+library:
+  css:
+    component:
+      working-process.scss: {}
+  js:
+    working-process.js: {}
+props:
+  steps:
+    type: array
+    label: Process Steps
+    description: List of steps for the working process.

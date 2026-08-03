@@ -1,0 +1,32 @@
+<section class="testimonials container-width">
+  <div class="container">
+    <div class="testimonials-header">
+      <h2 class="section-title"><span>Testimonials</span></h2>
+      <p class="section-subtitle">
+        Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Drupal Services
+      </p>
+    </div>
+
+    <div class="testimonials-slider">
+      {% for item in testimonials %}
+        <div class="testimonial-card">
+          <p class="testimonial-text">“{{ item.quote }}”</p>
+          <div class="testimonial-meta">
+            <h4 class="testimonial-name">{{ item.name }}</h4>
+            <p class="testimonial-position">{{ item.position }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="slider-controls">
+      <button class="prev" aria-label="Previous slide">←</button>
+      <div class="dots">
+        {% for item in testimonials %}
+          <span class="dot{% if loop.first %} active{% endif %}"></span>
+        {% endfor %}
+      </div>
+      <button class="next" aria-label="Next slide">→</button>
+    </div>
+  </div>
+</section>

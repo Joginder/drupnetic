@@ -1,0 +1,53 @@
+<footer class="site-footer container-width" role="contentinfo" aria-label="Site footer">
+  <div class="site-footer__wrap">
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <img src="{{ directory }}/images/logo.svg" alt="Positivus logo" class="site-footer__logo" />
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <ul>
+          {% for link in links %}
+            <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <div class="site-footer__social" aria-label="Social links">
+        <a href="#" aria-label="LinkedIn" class="social-icon">in</a>
+        <a href="#" aria-label="Facebook" class="social-icon">f</a>
+        <a href="#" aria-label="Twitter" class="social-icon">t</a>
+      </div>
+    </div>
+
+    <div class="site-footer__middle">
+      <div class="site-footer__contact">
+        <div class="contact-label">Contact us:</div>
+        <div class="contact-item"><strong>Email:</strong> <a href="mailto:{{ contact.email }}">{{ contact.email }}</a></div>
+        <div class="contact-item"><strong>Phone:</strong> <a href="tel:{{ contact.phone }}">{{ contact.phone }}</a></div>
+        <div class="contact-item"><strong>Address:</strong>
+          <address>{{ contact.address | nl2br }}</address>
+        </div>
+      </div>
+
+      <div class="site-footer__subscribe" aria-labelledby="subscribe-heading">
+        <form id="footer-subscribe" class="subscribe-form" action="#" method="post" novalidate>
+          <label id="subscribe-heading" class="sr-only">Subscribe to newsletter</label>
+          <div class="subscribe-inner">
+            <input type="email" name="email" placeholder="Email" aria-label="Email" required />
+            <button type="submit" class="btn-subscribe">Subscribe to news</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <hr class="site-footer__rule" />
+
+    <div class="site-footer__bottom">
+      <div class="site-footer__copyright">{{ copyright }}</div>
+      <div class="site-footer__legal">
+        <a href="/privacy-policy">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>

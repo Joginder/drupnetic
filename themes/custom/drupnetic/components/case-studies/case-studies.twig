@@ -1,0 +1,25 @@
+<section class="case-studies container-width" id="usecases">
+  <div class="cta">
+    <div class="cta__content">
+      <h2>{{ 'Let’s make things happen'|t }}</h2>
+      <p>
+        {{ 'Contact us today to learn more about how our digital marketing services can help your business grow and succeed online.'|t }}
+      </p>
+      <a href="#" class="cta__button">{{ 'Get your free proposal'|t }}</a>
+    </div>
+    <div class="cta__graphic">
+      <img src="{{ directory }}/images/cta-graphic.svg" alt="Decorative graphic" />
+    </div>
+  </div>
+
+  <div class="case-studies__header">
+    <h2 class="case-studies__title"><span>{{ 'Case Studies'|t }}</span></h2>
+    <p class="case-studies__subtitle">
+      {{ 'Explore real-life examples of our proven digital marketing success through our case studies'|t }}
+    </p>
+  </div>
+
+  
+  {{ drupal_view('case_studies_listing') }}
+  
+</section>

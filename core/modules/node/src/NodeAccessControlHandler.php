@@ -251,22 +251,26 @@ class NodeAccessControlHandler extends EntityAccessControlHandler implements Nod
    * {@inheritdoc}
    */
   protected function checkFieldAccess($operation, FieldDefinitionInterface $field_definition, AccountInterface $account, ?FieldItemListInterface $items = NULL) {
+    $fieldName = $field_definition->getName();
+    if ($operation == 'edit' && $fieldName === 'status') {
+      return AccessResult::allowedIfHasPermissions($account, ['administer node published status', 'administer nodes'], 'OR');
+    }
     // Only users with the administer nodes permission can edit administrative
     // fields.
-    $administrative_fields = ['uid', 'status', 'created', 'promote', 'sticky'];
-    if ($operation == 'edit' && in_array($field_definition->getName(), $administrative_fields, TRUE)) {
+    $administrative_fields = ['uid', 'created', 'promote', 'sticky'];
+    if ($operation == 'edit' && in_array($fieldName, $administrative_fields, TRUE)) {
       return AccessResult::allowedIfHasPermission($account, 'administer nodes');
     }
 
     // No user can change read only fields.
     $read_only_fields = ['revision_timestamp', 'revision_uid'];
-    if ($operation == 'edit' && in_array($field_definition->getName(), $read_only_fields, TRUE)) {
+    if ($operation == 'edit' && in_array($fieldName, $read_only_fields, TRUE)) {
       return AccessResult::forbidden();
     }
 
     // Users have access to the revision_log field either if they have
     // administrative permissions or if the new revision option is enabled.
-    if ($operation == 'edit' && $field_definition->getName() == 'revision_log') {
+    if ($operation == 'edit' && $fieldName == 'revision_log') {
       if ($account->hasPermission('administer nodes')) {
         return AccessResult::allowed()->cachePerPermissions();
       }
@@ -282,7 +286,8 @@ class NodeAccessControlHandler extends EntityAccessControlHandler implements Nod
     $grants = $this->moduleHandler->invokeAll('node_access_records', [$node]);
     // Let modules alter the grants.
     $this->moduleHandler->alter('node_access_records', $grants, $node);
-    // If no grants are set and the node is published, then use the default grant.
+    // If no grants are set and the node is published, then use the default
+    // grant.
     if (empty($grants) && $node->isPublished()) {
       $grants[] = ['realm' => 'all', 'gid' => 0, 'grant_view' => 1, 'grant_update' => 0, 'grant_delete' => 0];
     }

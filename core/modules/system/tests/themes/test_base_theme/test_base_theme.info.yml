@@ -1,11 +1,13 @@
 name: 'Theme test base theme'
 type: theme
 description: 'Test theme which acts as a base theme for other test subthemes.'
-# version: VERSION
+version: VERSION
 base theme: false
 hidden: true
 
 libraries:
+  - test_base_theme/base
+  - test_base_theme/messages
   - test_base_theme/global-styling
 libraries-override:
   core/drupal.dialog:
@@ -18,12 +20,3 @@ libraries-override:
     css:
       base:
         css/base-remove.css: false
-
-libraries-extend:
-  starterkit_theme/base:
-    - test_base_theme/global-styling
-
-# Information added by Drupal.org packaging script on 2025-06-05
-version: '11.1.8'
-project: 'drupal'
-datestamp: 1749167643

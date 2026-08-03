@@ -1,0 +1,8 @@
+name: "Header"
+status: stable
+description: "Main site header with logo, navigation and CTA button."
+type: component
+libraryOverrides:
+  css:
+    component:
+      header.css: {}

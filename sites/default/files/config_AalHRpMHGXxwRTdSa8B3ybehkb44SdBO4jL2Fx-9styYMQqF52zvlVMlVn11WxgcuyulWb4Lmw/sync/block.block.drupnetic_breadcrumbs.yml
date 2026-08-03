@@ -1,4 +1,4 @@
-uuid: be066a43-53de-4988-a28f-f5c351e3cb64
+uuid: a7a2eb89-1247-4bbb-87c5-0025c99d1bc3
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - drupnetic
 _core:
-  default_config_hash: R_6UY9tsX8g98xRwjnmAdd2TTmPg0d4eJgARRRww7dA
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
 id: drupnetic_breadcrumbs
 theme: drupnetic
 region: breadcrumb

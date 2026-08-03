@@ -1,4 +1,4 @@
-uuid: 7d859ed9-961a-4f9e-932a-a1af7cab583c
+uuid: 7221c410-6586-4c10-ad2c-7fa5251787d7
 langcode: en
 status: true
 dependencies:
@@ -526,8 +526,6 @@ display:
             multiple: true
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -567,8 +565,6 @@ display:
             multiple: true
             remember_roles:
               authenticated: authenticated
-              anonymous: '0'
-              administrator: '0'
             reduce: false
           is_grouped: false
           group_info:
@@ -661,6 +657,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
       query:

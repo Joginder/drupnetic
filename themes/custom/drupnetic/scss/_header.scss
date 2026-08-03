@@ -1,0 +1,66 @@
+// File contains hero section styling.
+
+@use 'var' as *;
+
+.site-header {
+  background-color: $color-white;
+  border-bottom: 1px solid $color-gray-300;
+
+  &__container {
+    @include container;
+    @include flex-center;
+    justify-content: space-between;
+    padding: $space-md 0;
+  }
+
+  &__logo {
+    font-family: $font-primary;
+    font-weight: 700;
+    font-size: $font-size-lg;
+    color: $color-dark;
+
+    a {
+      color: $color-dark;
+      text-decoration: none;
+      display: flex;
+      flex-flow: column;
+    }
+
+    img {
+      max-height: 92px;
+      object-fit: cover;
+    }
+  }
+
+  &__nav {
+    ul {
+      list-style: none;
+      display: flex;
+      gap: $space-lg;
+
+      li {
+        a {
+          font-size: $font-size-md;
+          color: $color-dark;
+          font-weight: 500;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: $color-primary;
+          }
+        }
+      }
+    }
+  }
+
+  &__cta {
+    @include button-style($color-white, $color-dark);
+    border: 1px solid $color-dark;
+    background: transparent;
+
+    &:hover {
+      background: $color-dark;
+      color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<header class="site-header">
+  <div class="site-header__container">
+    <div class="site-header__logo">
+      <a href="{{ path('<front>') }}">
+        <img src="themes/custom/drupnetic/logo.svg" alt="Logo">
+        Drupnetic
+      </a>
+    </div>
+
+    <nav class="site-header__nav">
+      {% if page.primary_menu %}
+        <h2 id="main-menu" class="visually-hidden">{{ 'Main navigation'|t }}</h2>
+        {{ page.primary_menu }}
+      {% else %}
+        <h2 id="main-menu" class="visually-hidden">{{ 'Main navigation'|t }}</h2>
+        {{ drupal_block('system_menu_block:main') }}
+      {% endif %}
+    </nav>
+
+    <a href="#contact" class="site-header__cta">{{ 'Request a quote'|t }}</a>
+  </div>
+</header>

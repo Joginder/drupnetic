@@ -1,0 +1,17 @@
+name: Contact Form
+status: stable
+type: component
+description: "Contact form section with Say Hi / Get a Quote toggle"
+props:
+  title:
+    type: string
+    label: Section title
+    default: "Contact Us"
+  subtitle:
+    type: string
+    label: Section subtitle
+    default: "Connect with Us: Let’s Discuss Your Drupal Needs"
+  button_text:
+    type: string
+    label: Button text
+    default: "Send Message"

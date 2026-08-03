@@ -1,4 +1,4 @@
-uuid: 9ec37f2a-81b0-4fc5-a0f4-a44ae0e7202c
+uuid: 236babad-fac8-47ae-b2d5-48cdef294fa4
 langcode: en
 status: true
 dependencies:
@@ -28,6 +28,15 @@ filters:
     status: true
     weight: 9
     settings: {  }
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<i class>'
+      filter_html_help: true
+      filter_html_nofollow: false
   filter_htmlcorrector:
     id: filter_htmlcorrector
     provider: filter

@@ -1,4 +1,4 @@
-uuid: e89cb6d1-104d-4a20-a9ae-c4964ba7bfc1
+uuid: 95d83669-456e-458e-a7b5-459782044f5c
 langcode: en
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
   theme:
     - drupnetic
 _core:
-  default_config_hash: Yz0nqqdf093Mas5pMzY_1Pydwptw2FhEjdZzTg4kGAY
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
 id: drupnetic_messages
 theme: drupnetic
 region: highlighted

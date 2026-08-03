@@ -1,0 +1,36 @@
+uuid: 6def8292-9a77-4c12-9986-928d3554bab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.case_studies.field_more
+    - field.field.paragraph.case_studies.field_short_description
+    - paragraphs.paragraphs_type.case_studies
+  module:
+    - link
+    - text
+id: paragraph.case_studies.default
+targetEntityType: paragraph
+bundle: case_studies
+mode: default
+content:
+  field_more:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_short_description:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

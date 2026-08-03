@@ -1,4 +1,4 @@
-uuid: 4f476023-8c79-444a-96de-b617afe2d38a
+uuid: 3a740cc6-9fe2-44ee-a29b-92be55934f43
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - drupnetic
 _core:
-  default_config_hash: 2O2Gle1uLIGXxA7dYsRP1s3nYSOfuZfbRqH8BJtZ0qc
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
 id: drupnetic_site_branding
 theme: drupnetic
 region: header
-weight: -7
+weight: -4
 provider: null
 plugin: system_branding_block
 settings:
@@ -20,6 +20,6 @@ settings:
   label_display: '0'
   provider: system
   use_site_logo: true
-  use_site_name: false
-  use_site_slogan: true
+  use_site_name: true
+  use_site_slogan: false
 visibility: {  }

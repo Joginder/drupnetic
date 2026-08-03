@@ -1,0 +1,29 @@
+name: "Site Footer"
+status: stable
+description: "Footer with nav, contact info, newsletter subscribe and copyright."
+type: component
+props:
+  links:
+    type: array
+    default:
+      - { label: "About us", url: "#" }
+      - { label: "Services", url: "#" }
+      - { label: "Use Cases", url: "#" }
+      - { label: "Pricing", url: "#" }
+      - { label: "Blog", url: "#" }
+  contact:
+    type: object
+    default:
+      email: "info@positivus.com"
+      phone: "555-567-8901"
+      address: "1234 Main St\nMoonstone City, Stardust State 12345"
+  copyright:
+    type: string
+    default: "© 2023 Positivus. All Rights Reserved."
+library:
+  css:
+    component:
+      footer.css: {}
+  js:
+    component:
+      footer.js: {}

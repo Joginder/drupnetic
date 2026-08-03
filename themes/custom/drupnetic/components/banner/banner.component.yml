@@ -1,0 +1,8 @@
+name: "Banner"
+status: stable
+description: "Hero banner with heading, description, button and illustration."
+type: component
+libraryOverrides:
+  css:
+    component:
+      banner.css: {}

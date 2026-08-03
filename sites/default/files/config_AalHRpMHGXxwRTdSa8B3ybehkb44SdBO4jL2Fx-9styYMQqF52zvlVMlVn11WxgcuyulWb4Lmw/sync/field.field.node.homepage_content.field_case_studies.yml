@@ -1,0 +1,29 @@
+uuid: b1ca5607-818a-4cf9-912a-a39682cdcc6f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_case_studies
+    - node.type.homepage_content
+  module:
+    - entity_reference_revisions
+id: node.homepage_content.field_case_studies
+field_name: field_case_studies
+entity_type: node
+bundle: homepage_content
+label: 'Case Studies'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles: null
+    negate: 0
+    target_bundles_drag_drop:
+      banner:
+        weight: 2
+        enabled: false
+field_type: entity_reference_revisions

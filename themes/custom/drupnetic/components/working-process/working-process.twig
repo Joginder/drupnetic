@@ -1,0 +1,27 @@
+<section class="working-process container-width">
+  <div class="working-process__header">
+    <h2 class="working-process__title">Our Working Process</h2>
+    <p class="working-process__subtitle">Step-by-Step Guide to Achieving Your Business Goals</p>
+  </div>
+
+  <div class="working-process__accordion">
+    {# {% for step in steps %} #}
+      <div class="accordion-item{% if loop.first %} active{% endif %}">
+        <div class="accordion-header">
+          <div class="accordion-number">{{ "%02d"|format(loop.index) }}</div>
+          <div class="accordion-title">{{ step.title }} Consultation</div>
+          <button class="accordion-toggle" aria-expanded="{{ loop.first ? 'true' : 'false' }}">
+            <span class="symbol">{{ loop.first ? '-' : '+' }}</span>
+          </button>
+        </div>
+
+        <div class="accordion-content" {% if not loop.first %}style="display: none;"{% endif %}>
+          <hr />
+          <p>{{ step.description }}
+          During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
+          </p>
+        </div>
+      </div>
+    {# {% endfor %} #}
+  </div>
+</section>

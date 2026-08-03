@@ -1,0 +1,118 @@
+
+@use 'sass:color';
+@use 'var' as *;
+
+.testimonials {
+  background-color: $dark-bg;
+  color: $color-white;
+  padding: 5rem 2rem;
+  border-radius: 2rem;
+  text-align: center;
+
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+    span {
+      background-color: $color-primary;
+      color: $black;
+      padding: 0.2rem 0.8rem;
+      border-radius: 0.5rem;
+    }
+  }
+
+  .section-subtitle {
+    color: $black;
+    max-width: 700px;
+    margin: 0 auto 2.5rem;
+    font-size: 1rem;
+  }
+
+  .testimonials-slider {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    .testimonial-card {
+      background-color: $card-bg;
+      border: 1px solid $color-primary;
+      border-radius: 2rem;
+      padding: 2rem;
+      max-width: 350px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 30px;
+        background-color: $card-bg;
+        border-left: 1px solid $color-primary;
+        border-bottom: 1px solid $color-primary;
+        transform: translateX(-50%) rotate(45deg);
+      }
+
+      .testimonial-text {
+        font-size: 1rem;
+        color: $color-white;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+      }
+
+      .testimonial-meta {
+        .testimonial-name {
+          color: $color-primary;
+          font-weight: 700;
+          margin-bottom: 0.2rem;
+        }
+        .testimonial-position {
+          font-size: 0.9rem;
+          color: $color-white;
+        }
+      }
+    }
+  }
+
+  .slider-controls {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    button {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: $color-primary;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+
+    .dots {
+      display: flex;
+      gap: 0.5rem;
+
+      .dot {
+        width: 10px;
+        height: 10px;
+        background-color: $color-white;
+        border-radius: 50%;
+        transition: 0.3s;
+
+        &.active {
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+}

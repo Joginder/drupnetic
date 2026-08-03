@@ -872,10 +872,10 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'drupnwhq_drup853',
-  'username' => 'drupnwhq_drup853',
-  'password' => '3IS@G@b1p4)E5m!!',
-  'prefix' => 'drst_',
+  'database' => 'drupnetic',
+  'username' => 'root',
+  'password' => 'root',
+  'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',
   'isolation_level' => '',
@@ -884,3 +884,9 @@ $databases['default']['default'] = array (
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
 $settings['config_sync_directory'] = 'sites/default/files/config_AalHRpMHGXxwRTdSa8B3ybehkb44SdBO4jL2Fx-9styYMQqF52zvlVMlVn11WxgcuyulWb4Lmw/sync';
+
+// Automatically generated include for settings managed by ddev.
+$ddev_settings = __DIR__ . '/settings.ddev.php';
+if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
+  require $ddev_settings;
+}

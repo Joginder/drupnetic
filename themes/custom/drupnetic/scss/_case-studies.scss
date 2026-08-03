@@ -1,0 +1,123 @@
+
+@use 'var' as *;
+
+.case-studies {
+  background-color: $color-white;
+
+  .cta {
+    display: grid;
+    gap: $space-lg;
+    align-items: center;
+    background-color: $color-gray-100;
+    border-radius: 1rem;
+    padding: $space-xl;
+    margin-bottom: $space-xxl;
+
+    @include respond(md) {
+      grid-template-columns: 1fr auto;
+      padding: $space-xxl;
+    }
+
+    &__content {
+      h2 {
+        font-size: $font-size-xl;
+        color: $color-dark;
+        margin-bottom: $space-sm;
+      }
+
+      p {
+        color: $color-gray-700;
+        font-size: $font-size-md;
+        margin-bottom: $space-md;
+        max-width: 42ch;
+      }
+    }
+
+    &__button {
+      @include button-style($color-dark, $color-white);
+    }
+
+    &__graphic img {
+      max-width: 180px;
+      height: auto;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: $space-sm;
+    margin-bottom: $space-lg;
+
+    @include respond(md) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+    }
+
+    .case-studies__title {
+      background-color: $color-primary;
+      padding: 0.25rem 0.75rem;
+      border-radius: 0.25rem;
+      font-size: $font-size-lg;
+      font-weight: 700;
+      margin-right: $space-md;
+    }
+
+    .case-studies__subtitle {
+      font-size: $font-size-md;
+      color: $color-gray-700;
+      max-width: 60ch;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    gap: $space-md;
+    background-color: $color-dark;
+    color: $color-white;
+    padding: $space-xl;
+    border-radius: 2rem;
+    position: relative;
+
+    @include respond(md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    >div:not(:last-child) {
+      border-right: 1px solid rgba($color-white, 1);
+    }
+
+    .case-studies__item {
+      max-width: 286px;
+
+      p {
+        margin-bottom: $space-md;
+        line-height: 1.6;
+        font-size: 1.125rem;
+      }
+
+      .learn-more {
+        display: block;
+        color: $color-primary;
+        font-weight: 600;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        span {
+          margin-left: 0.25rem;
+        }
+      }
+
+      &:not(:last-child) {
+        @include respond(md) {
+          border-right: 1px solid rgba($color-white, 0.15);
+        }
+      }
+    }
+  }
+}

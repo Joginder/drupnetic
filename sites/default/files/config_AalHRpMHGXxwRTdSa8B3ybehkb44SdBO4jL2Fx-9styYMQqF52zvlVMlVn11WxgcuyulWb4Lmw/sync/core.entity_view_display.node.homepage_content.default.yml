@@ -1,0 +1,49 @@
+uuid: 23f0e4fb-333a-4dcf-aee1-ba2efbedfef2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.homepage_content.field_banner
+    - field.field.node.homepage_content.field_case_studies
+    - field.field.node.homepage_content.field_services
+    - node.type.homepage_content
+  module:
+    - entity_reference_revisions
+    - user
+id: node.homepage_content.default
+targetEntityType: node
+bundle: homepage_content
+mode: default
+content:
+  field_banner:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_case_studies:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_services:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

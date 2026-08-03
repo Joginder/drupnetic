@@ -1,0 +1,9 @@
+name: Testimonials
+status: stable
+type: component
+description: "Client testimonials slider section"
+props:
+  testimonials:
+    type: array
+    label: Testimonials
+    description: "List of testimonial items"
